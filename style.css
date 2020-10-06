@@ -85,6 +85,16 @@ label {
 .Querry {
 	margin-top: -200px;
 }
+.footer {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	font-size: 24px;
+}
+a {
+	margin-left: 5px;
+	color: rgb(211, 168, 168);
+}
 
 @media only screen and (max-width: 1280px) {
 	body {
@@ -95,6 +105,9 @@ label {
 		color: var(--color-light);
 		margin: 15px 0px;
 		font-family: 'Assistant', sans-serif;
+	}
+	label {
+		margin: 5px 20px;
 	}
 	button {
 		width: 100vw;
