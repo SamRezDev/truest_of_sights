@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap');
+::after {
+	box-sizing: none;
+}
+:root {
+	--color-pink: #faa7ed;
+	--color-navy: #0c1f72;
+	--color-navy-opaque: rgba(6, 0, 79, 0.77);
+	--color-light: #ffffff;
+	--color-dark: #252525;
+}
+
+body {
+	font-size: 48px;
+	position: fixed;
+
+	transform: translate(50%, 50%);
+	background-color: hsl(255, 10%, 15%);
+	color: var(--color-light);
+	margin: 15px 0px;
+	font-family: 'Assistant', sans-serif;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(0, 0%, 20%);
+	border: 2px solid white;
+}
+input {
+	text-align: center;
+	height: 30px;
+	width: 500px;
+}
+select {
+	color: whitesmoke;
+	background-color: hsl(0, 0%, 20%);
+	border-radius: 5px;
+	border: 2px;
+	font-size: 30px;
+}
+button {
+	height: 50px;
+	width: 490px;
+	background-color: hsl(229, 81%, 25%);
+	transition: 0.25s;
+	color: white;
+	border-radius: 20px;
+	margin-bottom: 15px;
+}
+button:hover {
+	background-color: hsl(229, 81%, 60%);
+}
+.textres {
+	margin-bottom: 25px;
+	color: var(--color-pink);
+	border: 2px solid cornflowerblue;
+
+	border-left: none;
+	border-right: none;
+}
+label {
+	margin-bottom: 20px;
+}
+.AccountInfos {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-pink);
+}
+.AccountName {
+	margin-right: 15px;
+}
+.TotalDuration {
+	text-align: center;
+	color: cornflowerblue;
+
+	border: 10px solid var(--color-pink);
+
+	border-left: none;
+	border-right: none;
+}
+.Querry {
+	margin-top: -200px;
+}
+
+@media only screen and (max-width: 1280px) {
+	body {
+		font-size: 48px;
+		position: relative;
+		transform: translate(0%, 0%);
+		background-color: hsl(255, 10%, 15%);
+		color: var(--color-light);
+		margin: 15px 0px;
+		font-family: 'Assistant', sans-serif;
+	}
+	button {
+		width: 100vw;
+		margin: 15px;
+	}
+	input {
+		width: 80vw;
+	}
+	.Querry {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin-top: 0px;
+	}
+}
